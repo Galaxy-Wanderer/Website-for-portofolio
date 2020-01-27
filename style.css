@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Ruhl';
+    src: url('./fonts/FrankRuhlLibre-Regular.ttf');
+}
+@font-face {
+    font-family: 'Ruhl Medium';
+    src: url('./fonts/FrankRuhlLibre-Medium.ttf');
+}
+@font-face {
+    font-family: 'Vibes';
+    src: url('./fonts/GreatVibes-Regular.ttf');
+}
+body {
+    font-family: 'Ruhl', sans-serif;
+}
+h1 {
+    font-family: 'Vibes', sans-serif;
+}
