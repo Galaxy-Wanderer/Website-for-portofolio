@@ -29,6 +29,9 @@ h1 {
 ul {
     list-style-type: none;
 }
+a {
+    text-decoration: none;
+}
 .flex {
     display: flex;
     flex-direction: column;
@@ -36,7 +39,9 @@ ul {
     align-items: center;
 }
 header {
-    box-shadow: 0px 5px 20px gray;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
 }
 #logo {
     font-size: var(--logo-font);
@@ -47,11 +52,29 @@ nav a {
     color: black;
     font-size: 25px;
 }
+.hero h2 {
+    font-size: 3rem;
+    align-self: flex-start;
+}
+.hero .hero-intro p {
+    font-size: calc(2rem + 10px);
+    padding: 1rem 0 1rem 0;
+}
+.hero a {
+    color: black;
+    font-size: 2rem;
+    margin-top: 1em;
+    padding: 10px 2rem 10px 2rem;
+    border: 3px solid black;
+    font-weight: bold;
+    align-self: flex-start;
+}
 nav {
     width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
+    padding: 1rem 0rem;
     min-height: 10vh;
 }
 .links {
@@ -59,4 +82,22 @@ nav {
     justify-content: space-around;
     flex: 1 1 20rem;
     font-weight: bold;
+}
+.hero {
+    min-height: 90vh;
+    width: 90%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-intro {
+    flex: 3 1 40rem;
+}
+.hero-images {
+    flex: 1 1 40rem;
+    background: linear-gradient(#dad8dd, #dad1d4);
+}
+.hero-img {
+    object-fit: contain;
+    padding: 10% 0 0 10%;
 }
