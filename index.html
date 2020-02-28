@@ -13,15 +13,21 @@
         <header>
             <nav>
                 <h1 id="logo">Web Dev</h1>
+                <input type="checkbox" class="menu-check">
                 <ul class="links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </header>
         <main>
-            <section class="hero">
+            <section class="hero" id="home">
                 <div class="hero-intro flex">
                     <h2>The nature of Web Development</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate veniam eveniet soluta fugit eligendi placeat totam a unde maxime sit?</p>
@@ -30,10 +36,73 @@
                 <div class="hero-images">
                     <img class="hero-img" src="./images/html.jpg" alt="html">
                     <img class="img1 image" src="./images/css.jpg" alt="css">
-                    <img class="img2 image" src="./images/bluejs.jpg" alt="blue">
+                    <img class="img2 image" src="./images/javascript.jpg" alt="blue">
                 </div>
             </section>
-            <h5>Credit for <a href="https://icons8.com">icons8</a> for all the icons</h5>
+            <div class="about" id="about">
+                <div class="about-image">
+                    <h2>Technology</h2>
+                    <img src="./images/desktop.jpg" alt="desktop">
+                </div>
+                <div class="about-text flex">
+                    <h2>About Web Dev</h2>
+                    <div class="about-web-dev">
+                        <h3>What is it?</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel minus voluptatibus odit error tempora pariatur? Tempore rem inventore atque laborum?</p>
+                    </div>
+                    <div class="about-jobs">
+                        <h3>Are there any jobs?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, velit! Vitae, consequuntur dolores modi tempore vero beatae eaque in. Consequatur!</p>
+                    </div>
+                    <div class="about-learn">
+                        <h3>How to learn it?</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel minus voluptatibus odit error tempora pariatur? Tempore rem inventore atque laborum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes" id="features">
+                <div class="box box1">
+                    <h1>Hello world</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat porro esse vel consequatur doloribus ad id saepe ut quibusdam?</p>
+                </div>
+                <div class="box box2">
+                    <h1>Hello world</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat porro esse vel consequatur doloribus ad id saepe ut quibusdam?</p>
+                </div>
+                <div class="box box3">
+                    <h1>Hello world</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione aut aliquid. Laboriosam nobis qui corrupti harum optio aperiam error!</p>
+                </div>
+                <div class="box box4">
+                    <h1>Hello world</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque vero id fugiat laborum earum autem veritatis vitae qui quod. Omnis eaque nisi accusamus culpa temporibus, quas eius totam odio corrupti itaque porro, pariatur inventore.</p>
+                </div>
+                <div class="box box5">
+                    <h1>Hello world</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat porro esse vel consequatur doloribus ad id saepe ut quibusdam?</p>
+                </div>  
+            </div>
+            
+            <section class="contact" id="contact">
+                <div class="form-wrapper flex">
+                    <h2>Get in <br /> <span>touch</span></h2>
+                    <form>
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Your email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <img src="./images/programmer.jpg" alt="programmer">
+            </section>
+            <h5>Credit for <a href="https://icons8.com" style="color: blue;">icons8</a> for all the icons</h5>
         </main>
+        <footer>
+            <h4>Denis Onu &copy; 2020</h4>
+            <ul>
+                <li><a href="#"><img src="./images/github.png" alt="github"></a></li>
+                <li><a href="#"><img src="./images/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="./images/twitter.png" alt="twitter"></a></li>
+            </ul>
+        </footer>
     </body>
 </html>
