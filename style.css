@@ -24,6 +24,7 @@ html {
 body {
     font-family: 'Ruhl', sans-serif;
     animation: fade-opening 1s ease-in-out, opening 1.5s ease-in-out;
+    overflow-x: hidden;
 }
 h1 {
     font-family: 'Vibes', sans-serif;
@@ -231,7 +232,9 @@ nav {
     background: #cfd8dd;
 }
 .form-wrapper {
-    flex: 3 1 40rem;
+    flex: 3 1;
+    width: 100vw;
+    padding: 1rem;
     box-shadow: 0px 0px 15px gray;
     z-index: 2;
 }
@@ -257,7 +260,8 @@ nav {
     background: #263a41;
     color: white;
     font-family: 'Ruhl';
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 5px 0px;
     font-size: 20px;
     border-radius: 1em;
@@ -272,7 +276,7 @@ nav {
     border-bottom: 2px solid white;
 }
 .contact img {
-    flex: 1 1 40rem;
+    flex: 1 1;
     object-fit: cover;
 }
 footer {
@@ -281,11 +285,12 @@ footer {
     align-items: center;
     padding: 1rem;
     flex-wrap: wrap;
+    width: 100vw;
 }
 footer h4 {
     text-align: center;
     margin: 1rem;
-    flex: 1 1 40rem;
+    flex: 1 1;
     font-size: calc(1vw + 1rem);
 }
 footer img {
@@ -293,7 +298,7 @@ footer img {
 }
 footer ul {
     display: flex;
-    flex: 1 1 40rem;
+    flex: 1 1;
     justify-content: space-around;
     align-items: center;
 }
